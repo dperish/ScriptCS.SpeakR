@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package 
+xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>ScriptCS.SpeakR</id>
+        <version>0.1.0</version>
+        <title>ScriptCS.SpeakR</title>
+        <authors>David Lee Perish</authors>
+        
+<licenseUrl>https://raw.githubusercontent.com/dperish/ScriptCS.SpeakR/master/LICENSE</licenseUrl>
+        
+<projectUrl>https://github.com/dperish/ScriptCS.SpeakR/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A script pack for ScriptCS that exposes the Speak 
+method from System.Speech.Synthesis.SpeechSynthesizer.</description>
+        <copyright>Copyright (c) David Lee Perish</copyright>
+    </metadata>
+</package>
