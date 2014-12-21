@@ -1,4 +1,4 @@
-ScriptCs.ScriptPackBoilerplate
+ScriptCs.SpeakR
 ==============================
 
 A script pack for [ScriptCS](https://github.com/scriptcs/scriptcs) that exposes System.Speech.
