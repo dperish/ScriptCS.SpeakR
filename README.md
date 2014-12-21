@@ -1,7 +1,8 @@
 ScriptCs.SpeakR
 ==============================
 
-A script pack for [ScriptCS](https://github.com/scriptcs/scriptcs) that exposes System.Speech.
+A script pack for [ScriptCS](https://github.com/scriptcs/scriptcs) that 
+exposes System.Speech methods.
 
 Create to illustrate ScriptCS concepts in my [presentation](http://www.slideshare.net/DavidLeePerish/script-cs-for-business-and-pleasure) to the [Cleveland C#/VB.Net Special Interest Group](http://www.clevelanddotnet.info/).
 
