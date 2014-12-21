@@ -3,6 +3,8 @@ ScriptCs.SpeakR
 
 A script pack for [ScriptCS](https://github.com/scriptcs/scriptcs) that exposes System.Speech.
 
+Create to illustrate ScriptCS concepts in my [presentation](http://www.slideshare.net/DavidLeePerish/script-cs-for-business-and-pleasure) to the [Cleveland C#/VB.Net Special Interest Group](http://www.clevelanddotnet.info/).
+
 ## Usage
 
 ### Speak a string:
@@ -14,6 +16,12 @@ A script pack for [ScriptCS](https://github.com/scriptcs/scriptcs) that exposes 
 
     var speakr = Require<SpeakR>();
 	speakr.SpeakWrite("Hello text & speech!");
+
+## Future Enhancements
+
+- Update the Slides to include the script authoring, github'ing and packaging steps
+- Add functionality to allow better configuration (more voices, different speech rates, etc)
+- Add functionality to get speech to text
 
 ##License
 
