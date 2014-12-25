@@ -6,6 +6,10 @@ A script pack for [ScriptCS](https://github.com/scriptcs) that exposes the text-
 Originally created to illustrate ScriptCS concepts in my 
 [presentation](http://www.slideshare.net/DavidLeePerish/script-cs-for-business-and-pleasure) to the [Cleveland C#/VB.Net Special Interest Group](http://www.clevelanddotnet.info/).
 
+## Installation
+
+    C:\> scriptcs -install ScriptCS.SpeakR
+
 ## Usage
 
 #### Speak a string:
