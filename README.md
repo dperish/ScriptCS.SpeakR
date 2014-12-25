@@ -1,29 +1,42 @@
 ScriptCs.SpeakR
 ==============================
 
-A script pack for [ScriptCS](https://github.com/scriptcs/scriptcs) that 
-exposes System.Speech methods.
+A script pack for [ScriptCS](https://github.com/scriptcs) that exposes the text-to-speech methods from the System.Speech library.
 
 Originally created to illustrate ScriptCS concepts in my 
 [presentation](http://www.slideshare.net/DavidLeePerish/script-cs-for-business-and-pleasure) to the [Cleveland C#/VB.Net Special Interest Group](http://www.clevelanddotnet.info/).
 
 ## Usage
 
-### Speak a string:
+#### Speak a string:
 
-	var speakr = Require<SpeakR>();
-	speakr.Speak("Hello world!");
+    var speakr = Require<SpeakR>());
+    speakr.Speak("Hello world!");
 
-### Speak a string and also write the string to the Console:
+#### Speak a string and also write the string to the Console:
 
-    var speakr = Require<SpeakR>();
-	speakr.SpeakWrite("Hello text & speech!");
+    using(var speakr = Require<SpeakR>()) {
+        speakr.SpeakWrite("Hello text & speech!");
+    }
+    
+#### Selects a specific gender, culture, rate and speak the output to a wav file
+
+    using(var speakr = Require<SpeakR>()) {
+        speakr.Gender("female")
+              .Culture("en-gb")
+              .Rate(2)
+              .SetOutputToWaveFile("helloWorld.wav")
+              .Speak("Hello governer!");
+    }
 
 ## Future Enhancements
 
 - Update the Slides to include the script authoring, github'ing and packaging steps
-- Add functionality to allow better configuration (more voices, different speech rates, etc)
 - Add functionality to get speech to text
+- Add more methods from the base SpeechSynthesizer class, including:
+  - SSML support
+  - Async methods and delegates
+  - Output to stream funtcionality
 
 ##License
 
