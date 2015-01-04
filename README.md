@@ -3,12 +3,16 @@ ScriptCs.SpeakR
 
 A script pack for [ScriptCS](https://github.com/scriptcs) that exposes the text-to-speech methods from the System.Speech library.
 
-Originally created to illustrate ScriptCS concepts in my 
+Originally created to illustrate ScriptCS concepts in a 
 [presentation](http://www.slideshare.net/DavidLeePerish/script-cs-for-business-and-pleasure) to the [Cleveland C#/VB.Net Special Interest Group](http://www.clevelanddotnet.info/).
 
 ## Installation
 
     C:\> scriptcs -install ScriptCS.SpeakR
+    
+## Documentation
+
+Documentation for the SpeakR class can be found in the [Wiki](https://github.com/dperish/ScriptCS.SpeakR/wiki/SpeakR-Class-Documentation)
 
 ## Usage
 
