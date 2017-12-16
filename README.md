@@ -18,7 +18,7 @@ Documentation for the SpeakR class can be found in the [Wiki](https://github.com
 
 #### Speak a string:
 
-    var speakr = Require<SpeakR>());
+    var speakr = Require<SpeakR>();
     speakr.Speak("Hello world!");
 
 #### Speak a string and also write the string to the Console:
@@ -35,6 +35,26 @@ Documentation for the SpeakR class can be found in the [Wiki](https://github.com
               .Rate(2)
               .SetOutputToWaveFile("helloWorld.wav")
               .Speak("Hello governer!");
+    }
+
+#### Selects a specific gender, culture, rate and read a text file from textfiles.com
+
+    #r "System.Net.Http"
+
+    const string url = "http://textfiles.com/etext/FICTION/alice11.txt";
+    const string title = "ALICE'S ADVENTURES IN WONDERLAND";
+
+    using(var speakr = Require<SpeakR>()) {
+        speakr.Gender("female")
+                .Culture("en-us")
+                .Rate(1)
+                .Speak(
+                    title + " " + 
+                    (new HttpClient())
+                        .GetStringAsync(url)
+                        .Result
+                        .Split(new string[] { title}, StringSplitOptions.None)[1]
+                        .Replace("\r\n", " "));
     }
 
 ## Future Enhancements
