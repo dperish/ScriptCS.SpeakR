@@ -46,7 +46,7 @@ Documentation for the SpeakR class can be found in the [Wiki](https://github.com
     using(var speakr = Require<SpeakR>()) {
         speakr.Gender("female")
                 .Culture("en-us")
-                .Rate(1)
+                .Rate(0)
                 .Speak(
                     title + " " + 
                     (new HttpClient())
