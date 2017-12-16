@@ -18,8 +18,7 @@ Documentation for the SpeakR class can be found in the [Wiki](https://github.com
 
 #### Speak a string:
 
-    var speakr = Require<SpeakR>();
-    speakr.Speak("Hello world!");
+    var speakr = Require<SpeakR>();0    speakr.Speak("Hello world!");
 
 #### Speak a string and also write the string to the Console:
 
